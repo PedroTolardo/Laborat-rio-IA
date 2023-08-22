@@ -4,12 +4,150 @@
     "responses": ["Oi","Olá"]
   },
   { "tag": "despedida",
-    "patterns":["valeu","tchau","Obrigado","tks"],
+    "patterns":["valeu","tchau","Obrigado","tks", "não, obrigado"],
     "responses": ["Até breve","Falou"]
   },
-  { "tag": "data_prova",
-    "patterns":["Quando sera a prova?","A prova será em que dia?"],
-    "responses": ["no dia 26"]
+  { "tag": "sobre",
+    "patterns":["O que é o programa PIPE?","Qual a finalidade do programa PIPE?"],
+    "responses": ["O Programa FAPESP Pesquisa Inovativa em Pequenas Empresas - PIPE foi criado em 1997 e destina-se a apoiar, com a concessão de recursos não reembolsáveis, a execução de pesquisa científica e tecnológica inovativa em pequenas empresas."]
+  },
+  {"tag": "submissao",
+    "patterns":["Quando posso submeter meu projeto", "Até que data eu posso submeter meu projeto", "Até que dia eu posso submeter meu trabalho"],
+    "responses":["A submissão de propostas ao PIPE pode ser feita a qualquer momento do ano pelo SAGe"]
+  },
+  {"tag": "objetivos",
+    "patterns":["Quais são os objetivos do PIPE", "Quais os objetivos do programa"],
+    "responses":["a) Apoiar a pesquisa em ciência e tecnologia como instrumento para promover a inovação tecnológica, promover o desenvolvimento empresarial e aumentar a competitividade das pequenas empresas;\nb) Criar condições para incrementar a contribuição da pesquisa para o desenvolvimento econômico e social;\nc) Induzir o aumento do investimento privado em pesquisa tecnológica;\nd) Possibilitar que pequenas empresas se associem a pesquisadores do ambiente acadêmico em projetos de pesquisa visando à inovação tecnológica;\ne) Contribuir para a formação e o desenvolvimento de núcleos de desenvolvimento tecnológico nas pequenas empresas e para a colocação de pesquisadores no mercado de trabalho empresarial."]
+  },
+  {"tag": "características",
+    "patterns":["Quais são as fases do programa", "Quais as características do PIPE"],
+    "responses":["a) Fase 1: Análise de Viabilidade Técnico-Científica da proposta de pesquisa para inovação;\nb) Fase 2: Desenvolvimento da Proposta de Pesquisa para inovação;\nc) PIPE Invest: Aceleração da chegada ao mercado de Projetos apoiados nas Fase 1 e/ou 2, quando houver terceira parte interessada, em situações de investimento privado simultâneo; e\nd) Fase 3: desenvolvimento comercial e industrial dos produtos, processos, sistemas e/ou serviços inovadores obtidos a partir de pesquisas anteriores realizadas pela pequena empresa sem o apoio da FAPESP ou a partir de pesquisa apoiada no âmbito do PIPE."]
+  },
+  {"tag":"fase1",
+    "patterns":["Como funciona a fase 1", "O que é a fase 1", "Quais os objetivos da fase 1"],
+    "responses":["a) A Fase 1, com duração prevista de até 9 (nove) meses, destina-se à realização de pesquisas sobre a viabilidade técnico-científica da pesquisa para inovação proposta.\nb) O valor máximo de financiamento previsto para a Fase 1 é de R$ 300.000,00 (trezentos mil reais) para cada projeto, considerando todos os itens concedidos pela FAPESP, incluindo as Bolsas de Treinamento Técnico e Bolsas de Pesquisa em Pequena Empresa, exceto Benefícios Complementares e Parcela para Custos de Infraestrutura Direta do Projeto.\nb.1) Para receber o financiamento para a Fase 1, a empresa terá, ainda, que apresentar uma primeira versão do Lean Canvas do projeto de pesquisa para inovação (Anexo 5) a ter sua viabilidade técnica-científica validada nesta fase.\nc) Ao final de 9 meses, o Pesquisador Responsável deverá apresentar um Relatório Científico Final da Fase 1 e a Prestação de Contas dos recursos investidos pela FAPESP.\nc.1) Se houver interesse em submeter a proposta para receber financiamento na Fase 2, um Relatório Científico de progresso deverá ser submetido a partir do 6º mês de vigência da Fase 1, seguindo as orientações do item 2.2.1 abaixo. Esse Relatório Científico de progresso é adicional ao Relatório Científico Final da Fase 1 que deverá ser de qualquer forma apresentado após o término da vigência da Fase 1, na data estabelecida pela FAPESP. A qualidade dos resultados apresentados no relatório de progresso será determinante para a qualificação para a Fase 2 do Programa PIPE."]
+  },
+  {"tag":"fase2",
+    "patterns":["Como funciona a fase 2", "O que é a fase 2", "Quais os objetivos da fase 2"],
+    "responses":["a) A Fase 2, com duração prevista de até 24 (vinte e quatro) meses, destina-se ao desenvolvimento da proposta de pesquisa para inovação propriamente dita, podendo incluir atividades preliminares para a inserção dos resultados da pesquisa no mercado (atividades de apoio à comercialização).\nb) O valor máximo de financiamento previsto para a Fase 2 é de até R$ 1.500.000,00 (um milhão e quinhentos mil reais) para cada projeto, considerando todos os itens concedidos pela FAPESP, incluindo as Bolsas de Treinamento Técnico e Bolsas de Pesquisa em Pequenas Empresas, exceto Benefícios Complementares e Parcela para Custos de Infraestrutura Direta do Projeto.\nc) A concessão poderá ser feita para os projetos que demonstrem sucesso na Fase 1 e a avaliação dará prioridade às propostas que documentem compromisso de apoio financeiro adicional ao projeto).\nc.1) Para receber o financiamento para a Fase 2, a pequena empresa terá, ainda, que apresentar um Planejamento de Negócios para a comercialização dos novos produtos, processos, sistemas e/ou serviços, segundo o Anexo 2 – Planejamento de Negócios.\nd) Ao longo dos até 24 meses de vigência da Fase 2 a empresa deverá desenvolver e demonstrar à FAPESP (nos Relatórios Científicos) os esforços para o desenvolvimento da produção, da comercialização e do financiamento indispensáveis para a introdução dos resultados do projeto no mercado."]
+  },
+  {"tag":"PIPE invest",
+    "patterns":["O que é o PIPE Invest", "Quais os objetivos do PIPE Invest", "Qual o valor do PIPE Invest"],
+    "responses":["a) O PIPE Invest tem como objetivo oferecer fundos suplementares para projetos PIPE Fases 1 e 2 que tenham atingido ou superado seus objetivos em suas respectivas fases, para acelerar o processo de comercialização da inovação desenvolvida por meio do projeto.\nb) São elegíveis os projetos Fase 1 e 2 que demonstrem capacidade de atrair investimento privado, de uma terceira parte, voltado ao desenvolvimento tecnológico e comercial do produto, processo, sistema e/ou serviço decorrente da pesquisa para inovação apoiada pela FAPESP.\n\tb.1) Será considerado investimento elegível ao PIPE Invest o montante aportado até três meses antes da solicitação. Em casos específicos, a serem analisados individualmente pela FAPESP, o prazo poderá ser ampliado para até seis meses antes da solicitação. Como data de solicitação à FAPESP, será considerada a data de submissão da SM Outra relativa ao PIPE Invest no SAGe.\n\tb.2) Caso a pequena empresa demonstre um investimento financeiro privado de uma terceira parte de R$ 100 mil a R$ 750 mil, a FAPESP poderá conceder o PIPE Invest com uma vigência de até 12 meses, para a continuidade da pesquisa para inovação. Caso demonstre um investimento financeiro privado de uma terceira parte independente, de R$ 750 mil a R$ 1,5 milhão, a FAPESP poderá conceder o PIPE Invest com uma vigência de até 24 meses, para a continuidade da pesquisa, obedecendo o teto de R$ 1.500.000,00.\nc) Não será considerado investimento privado de uma terceira parte aquele realizado por:\n\tc.1) pessoas físicas com as quais o Pesquisador Responsável ou os sócios da pequena empresa estejam vinculados por meio de matrimônio, união estável ou laços de parentesco por afinidade ou por consanguinidade, neste caso, ascendentes, descendentes ou colaterais até o 4º grau;\n\tc.2) pessoas jurídicas que tenham como sócios o Pesquisador Responsável ou sócios da pequena empresa, bem como seus cônjuges ou seus parentes por afinidade ou por consanguinidade, neste caso, ascendentes, descendentes ou colaterais até o 4º grau;\n\tc.3) pessoas físicas ou jurídicas com as quais o Pesquisador Responsável ou os sócios da pequena empresa mantenham negócios, dívidas ou créditos. Excepcionalmente, poderá ser considerada situação em que haja relação anterior entre as partes, devendo neste caso ser apresentada justificativa detalhada contendo informações sobre créditos, débitos e negócios vigentes, existentes entre as partes;\n\tc.4) capital próprio dos sócios da empresa ou do Pesquisador Responsável.\nd) Os recursos da FAPESP no PIPE Invest devem ser utilizados exclusivamente para pesquisa para inovação, seguindo as normas da Fase 2 com o objetivo de aprimorar a tecnologia desenvolvida. Já os recursos de financiamento privado da terceira parte devem ser usados da melhor forma possível, a critério da empresa, contribuindo para o sucesso comercial dos resultados do projeto.\ne) As solicitações para o PIPE Invest devem ser feitas em duas etapas:\n\te.1) Submissão de Solicitação de Mudança do tipo “Outra” no processo da Fase 1 ou 2 no SAGe, devidamente justificada, que poderá ser feita a qualquer tempo durante sua vigência ou em até 3 (três) anos após o seu término, anexando a seguinte documentação:\n\t\te.1.1) Documentação emitida pelo investidor privado detalhando o investimento e sua motivação.\n\t\te.1.2) Contrato de investimento, caso disponível. Esse contrato será solicitado para a contratação.\n\te.2) Após análise da solicitação (SM-Outra) pela FAPESP, caso a documentação apresentada satisfaça as condições para o PIPE Invest e a Solicitação de Mudança do tipo “Outra” seja aprovada, o Pesquisador Responsável será autorizado a submeter no SAGe a proposta científica completa do PIPE Invest, em até 45 dias, para análise de mérito.\nf) As propostas serão avaliadas em seu mérito técnico e de negócio por, pelo menos, dois membros das Coordenações ou pela assessoria ad hoc. A critério da FAPESP as empresas poderão receber uma visita técnica e passar por entrevista.\ng) Caso a proposta completa seja aprovada pela FAPESP em seu mérito, a concessão adicional só será disponibilizada após a apresentação do contrato de investimento e a comprovação do depósito do investimento privado na conta corrente da pequena empresa, por meio de um depósito identificado ou outra forma equivalente que demonstre a origem e o destino do investimento.\nh) Caso desejado, o investidor privado poderá ter a alternativa de fazer o aporte parcelado, sempre antes das parcelas da FAPESP, da seguinte maneira:\nh.1) 50% antes da contratação e 50% antes do Relatório Científico parcial."]
+  },
+  {"tag":"fase3",
+    "patterns":["Quais os objetivos da fase 3", "O que é a fase 3", "Como funciona a fase 3"],
+    "responses":["a) Na Fase 3, espera-se que a pequena empresa realize internamente o desenvolvimento comercial e industrial dos produtos, processos, sistemas e/ou serviços inovadores obtidos a partir de pesquisas anteriores realizadas pela empresa sem o apoio da FAPESP ou a partir de pesquisa apoiada no âmbito do PIPE.\nb) A Fase 3 poderá ser financiada através de Chamadas de Propostas específicas."]
+  },
+  {"tag":"fase2 indireta",
+    "patterns":["Como funciona a fase 2 indireta", "O que é a fase 2 indireta", "Quais os objetivos da fase 2 indireta"],
+    "responses":["a) A Fase 2 Indireta se destina à continuidade de projetos apoiados pela FAPESP na Fase 1. Para ser elegível à Fase 2 Indireta, obrigatoriamente deve existir um projeto Fase 1 vigente com compromisso de Relatório Científico em aberto.\nb) A solicitação é realizada em duas etapas:\n\tb.1) A partir do 6º mês de vigência da Fase 1: submissão de Relatório Científico de progresso descrevendo os resultados parciais obtidos com o desenvolvimento da Fase 1, que justifiquem a viabilidade técnica da pesquisa para a Fase 2, e submissão de Solicitação de Mudança do tipo “Outra” no processo da Fase 1 no SAGe, devidamente justificada, anexando a seguinte documentação:\n\t\tb.1.1) Súmula curricular de eventuais novos pesquisadores principais e associados que participarão da Fase 2, mas que não estavam na equipe da Fase 1;\n\t\tb.1.2) Projeto de pesquisa para inovação para a Fase 2, elaborado conforme roteiro do Anexo 1 deste manual;\n\t\tb.1.3) Orçamento detalhado a ser solicitado à FAPESP, por alínea de despesa;\n\t\tb.1.4) Planos de atividades para as Bolsas de Treinamento Técnico solicitadas;\n\t\tb.1.5) Planejamento de Negócios para a comercialização dos novos produtos, processos, sistemas e/ou serviços, segundo o Anexo 2 – Planejamento de Negócios.\nb.2) Após análise da FAPESP, caso o Relatório Científico de progresso e a Solicitação de Mudança do tipo “Outra” sejam aprovados, o Pesquisador Responsável será autorizado a submeter a proposta completa de apoio para a Fase 2 Indireta no SAGe.\nb.3) As informações e documentos a serem anexados à proposta completa para a Fase 2 Indireta deverão ser os mesmos analisados pela FAPESP na submissão do Relatório Científico de progresso e na Solicitação de Mudança do tipo “Outra” aprovada. O envio de documentos diferentes daqueles apresentados anteriormente ocasionará o não enquadramento do processo."]
+  },
+  {"tag":"fase 2 direta",
+    "patterns":["Como funciona a fase 2 direta", "O que é a fase 2 direta", "Quais os objetivos da fase 2 direta"],
+    "responses":["a) O interessado no apoio de recursos do PIPE poderá submeter a proposta de pesquisa diretamente para a Fase 2 do Programa. Neste caso, deve ser apresentada justificativa circunstanciada para a não necessidade da Fase 1, com uma descrição detalhada dos resultados anteriores de pesquisas relacionadas à proposta em questão demonstrando claramente que a Fase 1 já foi realizada. A proposta completa deverá ser submetida seguindo as instruções do item 9.\nb) A fase 2 Direta poderá ser submetida a qualquer momento após o término da Fase 1 ou sempre que houver resultados anteriores que comprovem a viabilidade técnico-científica da pesquisa para inovação proposta."]
+  },
+  {"tag":"fazer na empresa",
+   "patterns":["O projeto de pesquisa tem que ser feito na empresa?", "O projeto é obrigatório para ser feito na empresa?"],
+   "responses":["Sim, obrigatoriamente. O PIPE destina-se a apoiar a execução de pesquisa EM pequenas empresas sediadas no Estado de São Paulo, conforme está explicitado nas normas do programa."]
+  },
+  {"tag":"necessidade da empresa",
+   "patterns":["Preciso ter uma empresa para solocitar o pipe?", "Preciso já ter uma empresa para solicitar o pipe?"],
+   "responses":["Não. A FAPESP analisa propostas de empresas ainda não constituídas. Empresas startup ainda não constituídas legalmente são incentivadas a submeter. Nos casos em que a proposta for recomendada, o proponente deverá então abrir formalmente a empresa antes da concessão da proposta."]
+  },
+  {"tag":"como deve ser a empresa",
+   "patterns":["O que é um empresa para fins de submissão ao pipe?", "Como deve ser a empresa para fazer a submissão?", "Quantos funcionários deve ter a empresa para fazer a submissão?"],
+   "responses":["É uma empresa com até 250 funcionários, independentemente do seu faturamento. A FAPESP considera empresa as sociedades empresárias previstas no Código Civil, o empresário individual, o microempreendedor individual (MEI), a sociedade limitada unipessoal e as sociedades simples. Associações, fundações, institutos e cooperativas não podem sediar um PIPE da FAPESP."]
+  },
+  {"tag":"áreas",
+   "patterns":["Há áreas prioritárias no pipe?", "Tem áreas mais importantes no pipe"],
+   "responses":["Não. O PIPE visa a apoiar pesquisas promissoras, com potencial de inovação, em qualquer área do conhecimento."]
+  },
+  {"tag":"produto pronto",
+   "patterns":["Tenho um produto pronto e desenvolvido, posso receber financiamento do pipe para comercializá-lo"],
+   "responses":["Não. O objetivo do PIPE é apoiar projetos de pesquisa para inovação, oferecendo recursos para custear a pesquisa visando ao desenvolvimento de um produto, processo ou serviço inovador. Se o produto já foi desenvolvido, as Fases 1 e 2 do PIPE não são necessárias para financiar pesquisa para se chegar a ele. Nesse caso, a proposta pode ser elegível para outros programas de subvenção econômica, no PIPE Fase 3, financiados em parceria com terceiros."]
+  },
+  {"tag":"doutor",
+   "patterns":["É preciso ter título de doutor para solicitar financiamento no pipe fapesp", "É preciso ser doutor para solicitar o financiamento pipe fapesp?"],
+   "responses":["Não. No programa PIPE é fundamental a experiência demonstrada pelo proponente no tema do projeto e a competência demonstrada para a liderança da pesquisa proposta. Embora a titulação acadêmica seja bem-vinda, ela não é de forma nenhuma exigida dos pesquisadores do PIPE."]
+  },
+  {"tag":"formação",
+   "patterns":["Possuo formação em uma área, posso submeter um projeto em outra área?"],
+   "responses":["No PIPE, o fundamental é demonstrar experiência na área do projeto. É importante que a equipe inclua profissionais de todas as áreas relevantes para a pesquisa. No entanto, nem todos os membros da equipe precisam ter relação direta com a empresa; podem ser incluídos na equipe especialistas de universidades e consultores, remunerados ou não, para complementar as especialidades necessárias à condução da pesquisa. Por exemplo, um projeto que envolve o desenvolvimento de um software para a saúde obrigatoriamente deve incluir na equipe especialistas em desenvolvimento de software e em saúde e um projeto que envolve o uso de eletrônica na agricultura obrigatoriamente deve incluir especialistas em eletrônica e em agricultura."]
+  },
+  {"tag":"dedicação",
+   "patterns":["Preciso ter dedicação exclusiva ao projeto", "Qual a dedicação mínima do projeto", "Qual a carga horária do projeto?"],
+   "responses":["Caso o pesquisador principal seja pago pela empresa e não receba bolsa da FAPESP, é exigida a dedicação mínima de 24 horas semanais ao projeto na empresa. Em casos excepcionais, em que a empresa demonstra não poder arcar com o salário do Pesquisador Responsável, a FAPESP pode analisar solicitação de Bolsa de Pesquisa em Pequena Empresa (Bolsa PE FAPESP). Se o pesquisador principal solicitar Bolsa PE, é necessária a dedicação mínima de 40 horas semanais ao projeto."]
+  },
+  {"tag":"fora do estado",
+   "patterns":["Pesquisadores e/ou empresas fora do Estado de São Paulo podem apresentar projetos?", "Sou fora do estado de São Paulo, posso apresentar projetos?"],
+   "responses":["O Pesquisador Responsável deverá residir no estado de São Paulo para ser elegível ao PIPE. Caso a empresa já esteja constituída fora do estado de São Paulo, o pesquisador deverá submeter o projeto, obrigatoriamente, em nome dessa empresa. Ter unidade de pesquisa constituída no estado de São Paulo (item 3.3 da norma) é condição para a concessão do processo. Adicionalmente, pesquisadores de outros estados que venham a instalar novas empresas em São Paulo e se tornem residentes no estado, também são elegíveis."]
+  },
+  {"tag":"professor",
+   "patterns":["Sou prefessor de universidade e quero criar um empresa para dedicar um dia por semana. Posso coordenar um projeto pipe da fapesp?", "Professor pode coordenar um projeto pipe da fapesp?"],
+   "responses":["O PIPE exige no mínimo 24 horas semanais de dedicação do coordenador ao projeto na empresa. Portanto, professores que não podem oferecer essa dedicação à empresa como, por exemplo, docentes em RDIDP e RTC nas universidades estaduais paulistas, não podem submeter um projeto PIPE. Docentes em RTP nas estaduais paulistas e outros professores que podem oferecer dedicação de, pelo menos, 24 horas semanais, podem coordenar um projeto PIPE. Entretanto, nessas condições não poderão pleitear uma bolsa PE."]
+  },
+  {"tag":"projeto de pesquisa na universidade",
+   "patterns":["É obrigatório ter projeto de pesquisa numa universidade para receber apoio do pipe da fapesp?"],
+   "responses":["Não há absolutamente nenhuma exigência de relação com qualquer instituição acadêmica. Embora relações entre a empresa e universidades sejam salutares, o PIPE é um programa para apoiar a pesquisa na empresa, não na universidade."]
+  },
+  {"tag":"desenvolvimento na univerisade",
+   "patterns":["Posso fazer o projeto na universidade", "Posso desenvolver a pesquisa na Universidade"],
+   "responses":["Não. A pesquisa deve ser desenvolvida na empresa. Eventualmente, algumas atividades específicas da pesquisa podem ser sub-contratadas de laboratórios de universidades ou de consultores acadêmicos desde que muito bem justificadas e não se constituam na parte central da pesquisa."]
+  },
+  {"tag":"bolsas",
+   "patterns":["Quantas bolsas de pesquisa em pequena empresa posso solicitar"],
+   "responses":["Normalmente, a cada projeto de empresas com pouco faturamento cabe uma única bolsa PE. Em condições excepcionais e muito bem justificadas, uma segunda bolsa PE pode ser solicitada. Nesse caso, dois planos de atividades precisam ser apresentados indicando claramente as atividades de cada bolsista PE no projeto. No caso de empresas com grande faturamento, espera-se que a própria empresa pague o pesquisador principal."]
+  },
+  {"tag":"tipos de bolsas",
+   "patterns":["Quais os tipos de bolsas?", "O que são bolsas TT-1, TT-2, TT-3, TT-4, TT-4A e TT-5"],
+   "responses":["São bolsas de Treinamento Técnico que têm por objetivo treinar e aperfeiçoar alunos de cursos técnicos, de nível médio e superior e de recém-formados, visando à sua futura incorporação à equipe de P&D da empresa. Para cada bolsa solicitada é fundamental a apresentação de um plano de trabalho individual conforme descrito em fapesp.br/tt.",
+                "São bolsas de Treinamento Técnico destinadas a profissionais com formação altamente especializada, para desenvolver atividades técnicas complexas junto ao projeto de pesquisa. Para cada bolsa solicitada é fundamental a apresentação de um plano de trabalho individual de 2 páginas, detalhando tecnicamente as tarefas a serem realizadas conforme descrito em fapesp.br/tt. O tempo de experiência do candidato é contado após a conclusão da graduação."]
+  },
+  {"tag":"recursos",
+   "patterns":["Posso solicitar recursos de transportes e diárias para viagens"],
+   "responses":["As propostas aprovadas recebem automaticamente Benefícios Complementares (BC) de R$ 16.000,00/ano para cobrirem despesas com a participação em reuniões científicas ou tecnológicas e estágios de pesquisa de curta duração fora do estado de São Paulo. Além desse valor, caso esteja plenamente justificado na proposta, poderão ser concedidos recursos adicionais para pesquisa de campo essenciais ao projeto; note que isso não se aplica a reuniões comerciais, eventos de marketing, pesquisa de mercado, etc."]
+  },
+  {"tag":"itens",
+   "patterns":["Quais os itens financiados", "Que outros itens são financiáveis"],
+   "responses":["Além das bolsas PE e TT e de recursos para viagens, são também financiáveis Serviços de Terceiros, Material Permanente e Material de Consumo. Estes podem ser adquiridos tanto no Brasil quanto no exterior. Em todos os casos, é fundamental que eles sejam bem justificados como essenciais à pesquisa científica ou tecnológica que será desenvolvida no âmbito do projeto. Não são financiáveis itens de produção ou que não sejam essenciais à pesquisa proposta, mesmo que possam ter utilidade para a empresa."]
+  },
+  {"tag":"consultores",
+   "patterns":["Posso contratar consultores?", "Como fica o propriedade intelectual"],
+   "responses":["Sim. Desde que bem justificado, é possível contratar Serviços de Terceiros de especialistas, de laboratórios acadêmicos ou de outras empresas. No caso de envolvimento de terceiros, prestadores de serviços ou parceiros no projeto, a relação deverá estar formalizada antes da concessão do projeto, considerando que:\na) Para os casos em que a participação do terceiro for de consultoria ou prestação de serviços, com remuneração com recursos do projeto ou da empresa, deverá ser apresentado contrato de prestação de serviços. Neste caso, a propriedade intelectual deve ser de propriedade exclusiva da pequena empresa.\nb) Caso a consultoria seja realizada por pesquisador de instituição pública, deverão ser apresentados:\n\tb.1) ofício da agência de inovação da respectiva Instituição de vínculo do pesquisador, concordando com a não participação na propriedade intelectual;\n\tb.2) autorização do órgão de pessoal da instituição para a consultoria;\n\tb.3) contrato entre o consultor e a empresa prevendo que a titularidade pertencerá à empresa.\nc) Para os casos em que houver colaboração entre a pequena empresa e o terceiro, poderá haver compartilhamento de propriedade intelectual, devendo ser apresentado convênio, detalhando no plano de trabalho qual a participação do terceiro e da empresa na pesquisa, bem como indicando quais serão os recursos financeiros e econômicos envolvidos para financiar as pesquisas do convênio e a origem de tais recursos.\nd) Em qualquer caso, a pequena empresa deve ter o direito de explorar com exclusividade os resultados da pesquisa.\nA atenção e cuidado profissional com os assuntos de Propriedade Intelectual é essencial para preservar o valor da empresa e de suas inovações e para viabilizar a obtenção de investimentos privados."]
+  },
+  {"tag":"despesas",
+   "patterns":["Posso usar recursos do PIPE para pagamento de despesas relativas à proteção de propriedade intelectual como patenteamento?"],
+   "responses":["Despesas com propriedade intelectual poderão ser financiadas com recursos da Parcela para Custos de Infraestrutura Direta do Projeto."]
+  },
+  {"tag":"empréstimo",
+   "patterns":["O apoio da fapesp é um empréstimo", "A bolsa é considerada como um empréstimo"],
+   "responses":["O apoio da FAPESP não é realizado na forma de empréstimo."]
+  },
+  {"tag":"parcela",
+   "patterns":["A fapesp fica com uma parcela da empresa?", "A fapesp tona sócia da empresa"],
+   "responses":["Não, a FAPESP não recebe cotas da empresa."]
+  },
+  {"tag":"tutilaridade",
+   "patterns":["A fapesp participa da titularidade da propriedade intelectual resultante do projeto"],
+   "responses":["A titularidade da propriedade intelectual resultante do projeto pertence à empresa sede do projeto."]
+  },
+  {"tag":"avaliação",
+   "patterns":["Quem avalia os projetos"],
+   "responses":["A FAPESP seleciona especialistas das áreas de conhecimento envolvidas no projeto para avaliá-lo. Projetos PIPE Fase 1 são avaliados por pelo menos dois assessores e projetos Fase 2 são avaliados por pelo menos 3 assessores. A identidade dos assessores é mantida em confidencialidade pela FAPESP, como faz a maior parte das agências de financiamento à pesquisa no mundo. Os assessores emitem pareceres e a FAPESP os reúne em comitês de avaliação que debatem cada caso e elaboram um novo parecer sobre cada projeto. Com base em todos esses pareceres e em uma entrevista com os proponentes, a Coordenação de Área e a Coordenação Adjunta de Pesquisa para Inovação fazem uma recomendação final à Diretoria Científica que emite a decisão final."]
+  },
+  {"tag":"denegação",
+   "patterns":["E se meu projeto for recusado", " E se meu projeto for denegado"],
+   "responses":["Nesse caso, você receberá pareceres explicando os motivos da denegação e apontando eventuais fragilidades da proposta apresentada. Caso haja interesse, você pode aprimorar o projeto baseado nos comentários dos assessores e resubmetê-lo em um pedido de “reconsideração”."]
+  },
+  {"tag":"concorrente",
+   "patterns":["Um concorrente pode avaliar meu projeto", "Outra organização pode avaliar meu projeto"],
+   "responses":["A FAPESP toma um grande cuidado para evitar que assessores que tenham potencial conflito de interesse com a proposta em análise participem da avaliação. Além disso, para realizar a avaliação, o parecerista assina documento atestando que não tem conflitos com o proponente e se compromete a manter sigilo sobre o tema avaliado."]
+  },
+  {"tag":"informações",
+   "patterns":["Como posso obter mais informações", "Onde adquirir mais informações sobre o pipe", "Qual o site do pipe"],
+   "responses":["O site fapesp.br/pipe apresenta em detalhes o programa, incluindo o texto completo das normas e as chamadas vigentes. Adicionalmente, de forma periódica, acontece o evento “Diálogo sobre Apoio à Pesquisa para Inovação na Pequena Empresa” no qual o programa PIPE é apresentado e os membros da coordenação tiram dúvidas dos participantes (veja as próximas datas no site do PIPE)."]
   }
+
 ]
 }
